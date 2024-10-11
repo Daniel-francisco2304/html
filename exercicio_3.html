@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro???</title>
+</head>
+<body>
+    <form bindsubmit="">
+        <h1>Cadastro</h1>
+        <label for="fname">Nome: </label>
+        <input id="fname" type="text" placeholder="Digite seu nome!" required>
+        <br>
+        <label for="femail">Email: </label>
+        <input id="femail" type="email" placeholder="Digite seu email!" required>
+        <br>
+        <label for="fhora">Hora desejada: </label>
+        <input id="fhora" type="time" required>
+        <br>
+        <label for="fcontato">Telefone:</label>
+        <input type="number" placeholder="apenas número" max="11" min="11" style="width: 16.5%;">
+        <br>
+        <label for="fsite">Seu site: </label>
+        <input id="fsite" type="url" placeholder="digite seu site" required>
+        <br>
+        <label for="fsenha">Senha: </label>
+        <input id="fsenha" type="password" placeholder="digite sua senha" required>
+        <br>
+        <label for="fnasc">Data de nascimento: </label>
+        <input id="fnasc" type="date" required>
+        <br><br>
+        <label for="">Sexo:</label>
+        <br>
+        <input type="radio" name="sexo">
+        <label for="">masculino</label>
+        <br>
+        <input type="radio" name="sexo">
+        <label for="">feminino</label>
+        <br>
+        <label for="UF">UF: </label>
+        <select name="UF" id="UF" required>
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+        </select>
+        <br>
+        <br>
+        <textarea placeholder="Comentários" rows="5" cols="30"></textarea>
+        <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
