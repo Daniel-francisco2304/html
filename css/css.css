@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+}
+
+div{
+    display: inline-block;
+    background-color: aqua;
+    height: 30px;
+    width: 49.7703227996826%;
+}

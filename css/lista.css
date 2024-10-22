@@ -1,0 +1,56 @@
+*{
+    margin-top: 0;
+    background-color:#95c9fc ;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lista_1 li{
+    list-style-type: none;
+    display: inline;
+}
+
+.lista{
+    list-style: url(icon_list\(1\).png);
+}
+
+.menu{
+    background-color: black;
+    color: aliceblue;
+    text-transform: capitalize;
+    height: 35px;
+    text-align: center;
+}
+
+a:link{
+    color: cadetblue;
+    text-decoration: none;
+}
+
+a:visited{
+    background-color: black;
+    color: yellow;
+}
+a:hover{
+    background-color: black;
+    color: aqua;
+}
+
+.div_1{
+    background-color: beige;
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px 30px 40px;
+}
+
+.div_2{
+    background-color: chocolate;
+    width: 80%;
+    height: 80px;
+    padding: 5px;
+}
