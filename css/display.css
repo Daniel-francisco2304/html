@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    flex-direction: row;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: center;
+    column-gap: 100px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+}
+
+#item1{
+    order: 2;
+    flex-grow: 2;
+}
+
+#item2{
+    order: 4;
+}
+
+#item3{
+    order: 1;
+}
+#item4{
+    order: 3;
+}
