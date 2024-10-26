@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de atendimentos :: Login</title>
+</head>
+<body>
+    <header style="text-align: center; background-color: bisque; display: block; padding: 0;"><h1>Sistema de atendimentos</h1></header>
+    <nav style="display: block; background-color: bisque;">
+        <ul>
+            <div style="text-align: center; display:block;">
+                <li style="display: inline;"><a href="home.html"> home </a></li>
+                <li style="display: inline;"><a href="#"> sobre nós</a></li>
+                <li style="display: inline;"><a href="#"> atendimentos</a></li>
+                <li style="display: inline;"><a href="login.html"> sair</a></li>
+            </div>
+        </ul>
+    </nav>
+    <main>
+        <fieldset style="margin-left: 5%; margin-right: 5%;">
+            <legend style="text-align: center;">Login</legend>
+            <form bindsubmit="">
+                <div style="text-align: center;">
+                    <label for="nome">Nome</label>
+                    <br>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                    <br>
+                    <br>
+                    <label for="senha">Senha</label>
+                    <br>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                    <br>
+                    <br>
+                    <button formaction="home.html">Acessar</button>
+                    <br><br>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+            </form>
+        </fieldset>
+    </main>
+    <footer style="display: block; margin-top: 55%; background-color: black; color: white; height: 80px;">
+        @Sprint 1 - Sistema de atendimentos avulços
+    </footer>
+</body>
+</html>
