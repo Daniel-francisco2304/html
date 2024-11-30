@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lanchonete</title>
+  </head>
+  <body>
+    
+    <h1>Net Lanches - Fast Food</h1>
+    <form>
+      <label for="cliente">Cliente</label>
+      <input type="clietne" name="cliente" id="cliente" />
+      <table>
+        <th>
+          <tr>
+            <td>Lanche</td>
+            <td>Valor</td>
+            <td>Quantidade</td>
+          </tr>
+        </th>
+        <tr>
+          <td>Cachorro Quente</td>
+          <td><input type="text" value="1.50" name="" id="valor_cq" /></td>
+          <td><input type="text" name="" id="q_cq" /></td>
+        </tr>
+        <tr>
+          <td>Refrigerante</td>
+          <td><input type="text" value="2.00" name="" id="valor_f" /></td>
+          <td><input type="text" name="" id="q_f" /></td>
+        </tr>
+      </table>
+      <input type="button" value="Limpar" onclick="limpar()" />
+      <input type="button" value="Enviar" onclick="enviar()" />
+    </form>
+    <div id="result"></div>
+
+    <script>
+      function enviar() {
+        const cliente = document.getElementById("cliente");
+        //nome cliente
+        nome_cliente = cliente.value;
+        //cont cliente = document.getElementById("cliente").value;
+
+        //dados cachorro quente
+        const vcq = document.getElementById("valor_cq").value;
+        const qcq = document.getElementById("q_cq").value;
+        let somach = vcq * qcq;
+
+        //dados refri
+        const vf = document.getElementById("valor_f").value;
+        const qf = document.getElementById("q_f").value;
+        let somaf = vf * qf;
+
+        //total
+        let total = somach + somaf;
+
+        const elemento_resultado = document.getElementById("result");
+        elemento_resultado.innerHTML = `<hr><h1> Cliente ${nome_cliente} </h1>`;
+        elemento_resultado.innerHTML = `<h1> Total R$  ${total} </h1>`;
+        elemento_resultado.innerHTML += `<hr><h3> Carrocho quente: ${qcq} </h3>`;
+        elemento_resultado.innerHTML += `<hr><h3> Refrigerante: ${qf} </h3>`;
+      }
+
+      function limpar() {
+        const qcq = (document.getElementById("q_cq").value = 0);
+        const qf = (document.getElementById("q_f").value = 0);
+        const cliente = (document.getElementById("cliente").value = "");
+        const elemento_resultado = document.getElementById("result");
+        elemento_resultado.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

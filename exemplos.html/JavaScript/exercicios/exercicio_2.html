@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <form bindsubmit="">
+        <table>
+            <th>
+                <tr>
+                    <td>nome da pessoa 1 :</td>
+                    <td><input type="text" id="p1" placeholder="Digite o seu nome"></td>
+                </tr>
+                <tr>
+                    <td>peso da pessoa 1:</td>
+                    <td><input type="number" name="kg1" id="kg1" placeholder="digite seu peso em kilos!"></td>
+                </tr>
+                <tr>
+                    <td><label for="p1" id="nome_2"> nome da pessoa 2 :</label></td>
+                    <td><input type="text" name="p1" id="p2" placeholder="Digite o seu nome"></td>
+                </tr>
+                <tr>
+                    <td>Peso da pessoa 2 :</td>
+                    <td><input type="number" name="kg2" id="kg2" placeholder="digite seu peso em kilos!"></td>
+                </tr>
+            </th>
+        </table>
+        <br>
+        <input type="button" value="Calcular" id="Calcular" onclick="calcular()">
+        <div id="div"></div>
+    </form>
+    <script>
+        function calcular(){
+            let pessoa_1 = document.getElementById("p1").value;
+            let peso_1 = Number(document.getElementById("kg1").value);
+            let pessoa_2 = document.getElementById("p2").value;
+            let peso_2 = Number(document.getElementById("kg2").value);
+            const div = document.getElementById("div");
+
+            if (peso_1 > peso_2){
+                div.innerHTML = `${pessoa_1}, você é mais pesado do que ${pessoa_2} em ${peso_1-peso_2}`
+            } else if (peso_1 < peso_2){
+                div.innerHTML = `${pessoa_2}, você é mais pesado do que ${pessoa_1} em ${peso_2-peso_1}`
+            } else{
+                div.innerHTML = `${pessoa_1}, ${pessoa_2}, vocês tem peso iguais!`
+            }
+        }
+        function limpar(){
+
+        }
+    </script>
+</body>
+</html>

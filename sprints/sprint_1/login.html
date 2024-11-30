@@ -5,41 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de atendimentos :: Login</title>
 </head>
-<body>
-    <header style="text-align: center; background-color: bisque; display: block; padding: 0;"><h1>Sistema de atendimentos</h1></header>
-    <nav style="display: block; background-color: bisque;">
-        <ul>
-            <div style="text-align: center; display:block;">
-                <li style="display: inline;"><a href="home.html"> home </a></li>
-                <li style="display: inline;"><a href="#"> sobre nós</a></li>
-                <li style="display: inline;"><a href="#"> atendimentos</a></li>
-                <li style="display: inline;"><a href="login.html"> sair</a></li>
-            </div>
+<body style="margin: 0%; padding: 0%; box-sizing: border-box; display: flex; flex-direction: column; min-height: 100vh;">
+    <header style="background-color: bisque; padding: 20px; text-align: center;">
+        <h1>Sistema de atendimentos</h1>
+    </header>
+    <nav style="background-color: burlywood;">
+        <ul style="display: flex; list-style-type: none; justify-content: center;">
+            <li style="margin:0 5px"><a href="home.html" style="color: black; text-decoration: none;"> home </a></li>
+            <li style="margin:0 5px"><a href="Aluno.html" style="color: black; text-decoration: none;"> Novo Aluno</a></li>
+            <li style="margin:0 5px"><a href="#" style="color: black; text-decoration: none;"> Novo Atendimento</a></li>
+            <li style="margin:0 5px"><a href="login.html" style="color: black; text-decoration: none;"> sair</a></li>
         </ul>
     </nav>
-    <main>
-        <fieldset style="margin-left: 5%; margin-right: 5%;">
-            <legend style="text-align: center;">Login</legend>
-            <form bindsubmit="">
-                <div style="text-align: center;">
-                    <label for="nome">Nome</label>
-                    <br>
-                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
-                    <br>
-                    <br>
-                    <label for="senha">Senha</label>
-                    <br>
-                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
-                    <br>
-                    <br>
-                    <button formaction="home.html">Acessar</button>
-                    <br><br>
-                    <a href="#">Esqueceu a senha?</a>
-                </div>
-            </form>
-        </fieldset>
+    <main style="flex: 1; padding: 20px; background-color: azure;">
+        <form bindsubmit="post">
+            <section>
+                <fieldset>
+                    <legend>Login</legend>
+                    <div style="text-align: center;">
+                        <label for="nome" id="senha">Nome</label>
+                        <input type="text" name="Nome" id="nome" placeholder="Digite seu nome" required>
+                        <br>
+                        <br>
+                        <label for="senha" id="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                        <br>
+                        <br>
+                        <input type="checkbox">
+                        <label for="checkbox">Lembre-se de mim</label>
+                        <br>
+                        <a href="#" style="text-decoration: none;">esqueceu sua senha?</a>
+                        <br>
+                        <br>
+                        <button formaction="home.html">Acessar</button>
+                        <input type="reset" value="Cancelar">
+                    </div>
+                </fieldset>
+            </section>
+        </form>
     </main>
-    <footer style="display: block; margin-top: 55%; background-color: black; color: white; height: 80px;">
+    <footer style="padding: 10px; background-color: black; color: azure; padding: 10px;">
         @Sprint 1 - Sistema de atendimentos avulços
     </footer>
 </body>

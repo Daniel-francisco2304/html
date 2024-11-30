@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar fundo</title>
+</head>
+<body id = fundo>
+    <input type="button" value="Acender" id = "Acender" onclick="acender()">
+    <input type="button" value="Apagar" id = "Apagar" onclick="apagar()">
+    <script>
+        function acender(){
+            const elemento_acender = document.getElementById("fundo")
+            elemento_acender.style.background = "yellow"
+        }
+        
+        function apagar(){
+            const elemento_apagar = document.getElementById("fundo")
+            elemento_apagar.style.background = "black"
+        }
+    </script>
+</body>
+</html>

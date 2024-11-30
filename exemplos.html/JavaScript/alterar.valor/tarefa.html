@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Lista de tarefas</h2>
+    <input type="text" name="tarefas" id="tarefa" placeholder="Digite uma tarefa">
+    <input type="button" value="Adicionar" onclick="adicionar_tarefa()">
+    <ol id="listaTarefas">
+    </ol>
+    
+    <script>
+        let lista_array = new array();
+
+        function adicionar_tarefa(){
+
+            let tarefa = document.getElementById("tarefa").value;
+            lista_array.push(tarefa);
+
+            adcionar_tarefas.innerHTML = "";
+
+            let adcionar_tarefas = document.getElementById("listaTarefas");
+            
+            lista_array.forEach(function (tarefas){
+                adcionar_tarefas.innerHTML += `<li>`+tarefas+`<li>`;
+            
+            })
+        }
+    </script>
+</body>
+</html>
